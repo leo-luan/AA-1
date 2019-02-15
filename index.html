@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Sistemas Distribuídos - Aula01</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<p>
+						Universidade do Estado de Mato Grosso <br />
+						<em>Campus</em> Cáceres <br />
+						Faculdade de Ciências Exatas <br/>
+						Bacharelado em Ciência da Computação
+					</p>
+					<br />
+					<h2>Análise de Algoritmo</h2>
+					<h4>Apresentação da disciplina</h4>
+					<br />
+					<p>
+						Leonardo Luan Martins da Silva <br />
+						14 de fevereiro de 2019
+					</p>
+				</section>
+
+				<section style="text-align: left;">
+					<h3>Roteiro</h3>
+					<br />
+					<ul>
+						<li>A disciplina</li>
+						<ul>
+							<li>Objetivos</li>
+							<li>Ementa</li>
+						</ul>
+						<li>Bibliografia</li>
+						<li>Avaliação</li>
+						<li>Contato</li>
+					</ul>
+				</section>
+
+				<section style="text-align: left">
+					<h3>A disciplina</h3>
+					<h5>Objetivos</h5>
+					<br />
+					<section>
+						<p>
+							<strong>Gerais:</strong> Introduzir técnicas que permitam identificar limites de complexidade de algoritmos, mensurar a qualidade e eficiência de algoritmos iterativos e recursivos.
+							<br />
+						</p>
+					</section>
+					<section style='font-size: 85%'>
+						<p>
+							<strong>Específicos:</strong>
+							<ul>
+								<li>Apresentar medidas de complexidade de algoritmos e sua aplicação; </li>
+								<li>Identificar limites de complexidade de algoritmos; </li>
+								<li>Utilizar relações de recorrência para análise de algoritmos recursivos; </li>
+								<li>Comparar custos computacionais de algoritmos iterativos e recursivos; </li>
+								<li>Apresentar notações “Big O”, “Little o”, “Omega” e “Theta”</li>
+							</ul>
+						</p>
+					</section>
+				</section>
+
+				<section style="text-align: left;">
+					<h3>A disciplina</h3>
+					<h5>Ementa</h5>
+					<br />
+					<section>
+						<ul>
+							<li>Medidas de Complexidade.</li>
+							<li>Análise Assintótica de Limites de Complexidade.</li>
+							<li>Técnicas de Prova de Cotas Inferiores. </li>
+							<li>Notação “Big O”, “Little o”, “Omega” e “Theta”. </li>
+							<li>Medidas Empíricas de Performance. </li>
+							<li>O Uso de Relações de Recorrência para Análise de Algoritmos Recursivos.</li>
+							<li>Análise de Algoritmos Iterativos e Recursivos.</li>
+						</ul>
+					</section>
+				</section>
+
+				<section style="text-align: left;font-size: 85%">
+					<h3>Bibliografia básica</h3>
+					<br />
+					<ul>
+						<li style='margin-bottom: 40px'>CAMPELLO, Ruy Eduardo e MACULAN, Nelson. <strong>Algoritmos e Heurísticas</strong>: Desenvolvimento e Avaliação de Performace. Editora da UFF, Niteroi, 1994.</li>
+						<li style='margin-bottom: 40px'>CORMEN,Thomas H. et al. <strong>Algoritmos Teoria e Prática</strong>. Tradução da 2ª Ed. Americana, 5º Ed., Elsevier. Rio de Janeiro, 2002.</li>
+						<li>GOODRICH, Michael T. e TAMASSIA, Roberto. <strong>Projeto de Algoritmos</strong>: Fundamentos Análises e Exemplos da Internet. Bookman. Porto Alegre, 2004.</li>
+					</ul>
+				</section>
+
+				<section style="text-align: left;">
+					<h3>Avaliação</h3>
+					<br />
+					<ul>
+						<li>2 provas</li>
+						<li>1 seminário de simulação</li>
+					</ul>
+				</section>
+
+				<section style="text-align: left;">
+					<h3>Contato</h3>
+					<br />
+					<ul>
+						<li><strong>E-mail:</strong> <a href='mailto:leoluan@unemat.br'>leoluan@unemat.br</a></li>
+						<li><strong>WhatsApp:</strong> (65) 9 9925 3745</li>
+						<li><strong>Website:</strong> <a target='_blank' href='https://leo-luan.github.io/'>https://leo-luan.github.io/</a></li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				mouseWheel: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+			Reveal.configure({ slideNumber: 'c/t' });
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</body>
+</html>
